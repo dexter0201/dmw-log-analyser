@@ -1,0 +1,31 @@
+{
+    "author": {
+        "name": "Dexter Nguyen"
+    },
+    
+    "logPath": "/on/demandware.servlet/webdav/Sites/Logs",
+    
+    "sandboxes": [{
+        "name": "twg-production",
+        "url": "production-web-thewarehouselimited.demandware.net",
+        "username": "hieu.le@amblique.com",
+        "password": "3P@ssword"
+    }],
+    
+    "serverCodes": {
+        "401": "401 - Authorization Required"
+    },
+    
+    "output": "output",
+    
+    "groupErrors": true,
+    
+    "template": "template/json-formatter.js",
+    
+    "summaryTemplate": "template/summary.html",
+    
+    "ignoreFiles": [
+        ".DS_Store",
+        "__MACOSX"
+    ]
+}

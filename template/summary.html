@@ -1,0 +1,35 @@
+<html>
+<head>
+    <style>
+        .jsonview {
+            font - family: monospace;
+            font - size: 1.1e m;
+            white - space: pre - wrap
+        }.jsonview.prop {
+            font - weight: 700;
+            text - decoration: none;
+            color: #000}.jsonview .null,.jsonview .undefined{color:red}.jsonview .bool,.jsonview .num{color:# 00 f
+        }.jsonview.string { color: green;white - space: pre - wrap }.jsonview.string.multiline { display: inline - block;vertical - align: text - top }.jsonview.collapser { position: absolute;left: -1e m;cursor: pointer }.jsonview.collapsible { transition: height 1.2 s;transition: width 1.2 s }.jsonview.collapsible.collapsed { height: .8e m;width: 1e m;display: inline - block;overflow: hidden;margin: 0 }.jsonview.collapsible.collapsed: before { content: "…";width: 1e m;margin - left: .2e m }.jsonview.collapser.collapsed { transform: rotate(0) }.jsonview.q { display: inline - block;width: 0;color: transparent }.jsonview li { position: relative }.jsonview ul {
+            list - style: none;
+            margin: 0 0 0 2e m;
+            padding: 0
+        }.jsonview h1 { font - size: 1.2e m }
+    </style>
+    
+    <script>${json-formatter}</script>
+</head>
+<body>
+    Server: <strong>${serverName}</strong><br/>
+    Log Date: <strong>${logDate}</strong><br/>
+    Total Errors: <strong>${totalErrors}</strong><br/>
+    
+    <div id="json">
+    </div>
+    
+    <script>
+        var summaryJson = ${summaryJson};
+        
+        $('#json').JSONView(summaryJson);
+    </script>
+</body>
+</html>
